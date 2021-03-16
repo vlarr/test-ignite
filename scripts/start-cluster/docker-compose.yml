@@ -1,0 +1,20 @@
+version: "3"
+services:
+  ignite-node-1:
+    image: apacheignite/ignite:2.9.1
+    environment:
+      OPTION_LIBS: ignite-rest-http,ignite-aws
+      CONFIG_URI: /my-conf.xml
+    volumes:
+      - ./my-conf.xml:/my-conf.xml
+
+  ignite-node-2:
+    image: apacheignite/ignite:2.9.1
+    environment:
+      OPTION_LIBS: ignite-rest-http,ignite-aws
+      CONFIG_URI: /my-conf.xml
+    volumes:
+      - ./my-conf.xml:/my-conf.xml
+networks:
+  default:
+    driver: bridge
