@@ -6,7 +6,7 @@
 
 ## start-cluster
 
-Запуск через docker 2-х нод Ignite c настройками из файла `my-conf.xml`. 
+Запуск через docker 4-х нод Ignite c настройками из файла `my-conf.xml`. 
 
 # testapp5
 
